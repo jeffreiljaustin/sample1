@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SampleController {
     
-    //http://localhst:8080/hello-world
+    //http://localhost:8080/hello-world
     @GetMapping("/hello-world")
     public String helloWorld(){
         return "Hello World";
