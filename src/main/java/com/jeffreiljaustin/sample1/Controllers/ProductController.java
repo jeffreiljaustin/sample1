@@ -24,14 +24,14 @@ public class ProductController {
         this.repo = repo;
     }
 
-    //http://127.0.0.1/products
+    //http://127.0.0.1:8080/products
     //Get all Products
     @GetMapping("/products")
     public List<Product> getProducts(){
         return repo.findAll();
     }
 
-    //http://127.0.0.1:8080/product/52
+    //http://127.0.0.1:8080/product/{id}
     @GetMapping("/product/{id}")
     public Product getProduct(@PathVariable Long id){
         return repo.findById(id)
